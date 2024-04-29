@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar con Tailwind CSS</title>
+    <!-- Incluye Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body  class="text-gray-400 bg-gray-900 body-font">
+    <nav class="py-4 border-b border-white">
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <a routerLink="/" class="ml-3 text-xl text-white">Mi Sitio</a>
+        <!-- Links del Navbar -->
+        <ul class="flex space-x-4">
+          <li>
+            <a routerLink="/inicio" class="mr-5 hover:text-white">Inicio</a>
+          </li>
+          <li>
+            <a routerLink="/producto" class="mr-5 hover:text-white"
+              >Productos</a
+            >
+          </li>
+          <li>
+            <a routerLink="/usuario" class="mr-5 hover:text-white"
+              >Usuarios</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
